@@ -17,24 +17,15 @@ export function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-lg shadow-lg z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-24">
 
           {/* Logo */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center">
             <img
               src="/sathvika-logo.png"
               alt="Sathvika Coaching Academy"
-              className="w-14 h-14 object-contain"
+              className="h-20 w-auto object-contain"
             />
-
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-blue-900">
-                Sathvika Coaching Academy
-              </span>
-              <span className="text-xs text-orange-600 font-semibold">
-                Knowledge Transforms The Future
-              </span>
-            </div>
           </div>
 
           {/* Desktop Menu */}
@@ -63,7 +54,7 @@ export function Navbar() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-2.5 rounded-lg font-semibold shadow-lg shadow-orange-500/30"
+              className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg shadow-orange-500/30"
             >
               Enroll Now
             </motion.button>
