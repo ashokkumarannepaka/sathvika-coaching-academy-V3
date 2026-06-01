@@ -21,20 +21,20 @@ export function Navbar() {
 
           {/* Logo */}
           <div className="flex items-center">
-           <img
-  src="sathvika-logo.png"
-  alt="Sathvika Logo"
-  className="h-20 w-auto object-contain"
-/>
+            <img
+              src="/sathvika-logo.png"
+              alt="Sathvika Logo"
+              className="h-20 w-auto object-contain"
+            />
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8 mr-16">
             {menuItems.map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                className="text-gray-700 hover:text-orange-500 font-medium transition-all duration-300"
               >
                 {item}
               </a>
@@ -48,7 +48,7 @@ export function Navbar() {
               className="flex items-center gap-2 text-blue-600 font-semibold hover:text-orange-500 transition-colors"
             >
               <Phone className="w-5 h-5" />
-              <span>+91 9035955777</span>
+              <span>+91 90359 55777</span>
             </a>
 
             <motion.button
@@ -88,7 +88,7 @@ export function Navbar() {
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}
-                  className="block py-2 text-gray-700 hover:text-blue-600 font-medium"
+                  className="block py-2 text-gray-700 hover:text-orange-500 font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   {item}
@@ -97,11 +97,11 @@ export function Navbar() {
 
               <div className="pt-4 space-y-3">
                 <a
-                  href="tel:+919999999999"
+                  href="tel:+919035955777"
                   className="flex items-center gap-2 text-blue-600 font-semibold"
                 >
                   <Phone className="w-5 h-5" />
-                  <span>+91 99999 99999</span>
+                  <span>+91 90359 55777</span>
                 </a>
 
                 <button className="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg">
