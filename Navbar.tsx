@@ -21,10 +21,11 @@ export function Navbar() {
 
           {/* Logo */}
           <div className="flex items-center">
-            <img
-              src="/sathvika-logo.png"              
-              className="h-20 w-auto object-contain"
-            />
+           <img
+  src="/sathvika-logo.png"
+  alt="Sathvika Logo"
+  className="h-20 w-auto object-contain"
+/>
           </div>
 
           {/* Desktop Menu */}
