@@ -47,7 +47,7 @@ export function Navbar() {
               className="flex items-center gap-2 text-blue-600 font-semibold hover:text-orange-500 transition-colors"
             >
               <Phone className="w-5 h-5" />
-              <span>+91 99999 99999</span>
+              <span>+91 9035955777</span>
             </a>
 
             <motion.button
