@@ -23,7 +23,7 @@ export function Navbar() {
           <div className="flex items-center">
             <img
               src="/sathvika-logo.png"
-              alt="Sathvika Coaching Academy"
+              alt="Sathvika Logo"
               className="h-20 w-auto object-contain"
             />
           </div>
