@@ -43,7 +43,7 @@ export function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-4">
             <a
-              href="tel:+919999999999"
+              href="tel:+919035955777"
               className="flex items-center gap-2 text-blue-600 font-semibold hover:text-orange-500 transition-colors"
             >
               <Phone className="w-5 h-5" />
