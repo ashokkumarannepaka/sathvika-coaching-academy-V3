@@ -16,3 +16,30 @@ import { FloatingWhatsApp } from "./FloatingWhatsApp";
 import { ScrollToTop } from "./ScrollToTop";
 import { useEffect } from "react";
 import "./custom.css";
+
+export default function App() {
+  useEffect(() => {
+    document.documentElement.style.scrollBehavior = "smooth";
+  }, []);
+
+  return (
+    <div className="min-h-screen bg-white">
+      <Navbar />
+      <Hero />
+      <QuickRegistration />
+      <ScholarshipTest />
+      <Courses />
+      <WhyChoose />
+      <TopResults />
+      <Testimonials />
+      <AcademyAdvantages />
+      <Branches />
+      <Gallery />
+      <FAQ />
+      <Contact />
+      <Footer />
+      <FloatingWhatsApp />
+      <ScrollToTop />
+    </div>
+  );
+}
