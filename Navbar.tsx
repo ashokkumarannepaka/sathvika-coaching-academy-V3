@@ -22,8 +22,7 @@ export function Navbar() {
           {/* Logo */}
           <div className="flex items-center">
             <img
-              src="/sathvika-logo.png"
-              alt="Sathvika Logo"
+              src="/sathvika-logo.png"              
               className="h-20 w-auto object-contain"
             />
           </div>
