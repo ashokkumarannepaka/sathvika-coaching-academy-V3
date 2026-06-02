@@ -86,21 +86,21 @@ export function Contact() {
               {
                 icon: Phone,
                 title: "Call Us",
-                info: "+91 98765 43210",
+                info: "+91 903595777",
                 subinfo: "Mon - Sat: 9:00 AM - 7:00 PM",
                 color: "from-green-500 to-green-600"
               },
               {
                 icon: MessageCircle,
                 title: "WhatsApp",
-                info: "+91 98765 43210",
+                info: "+91 903595777",
                 subinfo: "24/7 Support Available",
                 color: "from-green-400 to-green-500"
               },
               {
                 icon: Mail,
                 title: "Email",
-                info: "info@sathvikaacademy.com",
+                info: "info@sathvikacoachingacademy.com",
                 subinfo: "We'll respond within 24 hours",
                 color: "from-blue-500 to-blue-600"
               },
