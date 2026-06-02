@@ -1,5 +1,6 @@
 import { Navbar } from "./Navbar";
 import { Hero } from "./Hero";
+import { DirectorMessage } from "./DirectorMessage";
 import { QuickRegistration } from "./QuickRegistration";
 import { ScholarshipTest } from "./ScholarshipTest";
 import { Courses } from "./Courses";
@@ -26,6 +27,7 @@ export default function App() {
     <div className="min-h-screen bg-white">
       <Navbar />
       <Hero />
+      <DirectorMessage />
       <QuickRegistration />
       <ScholarshipTest />
       <Courses />
