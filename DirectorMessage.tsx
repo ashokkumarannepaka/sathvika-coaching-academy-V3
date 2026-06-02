@@ -13,7 +13,7 @@ return ( <section className="py-20 bg-white"> <div className="max-w-7xl mx-auto 
       >
         <div className="relative">
           <img
-            src="/vijay.png"
+           src={`${import.meta.env.BASE_URL}vijay.png`}
             alt="B. Vijay Kumar"
             className="w-80 h-auto rounded-3xl shadow-2xl border-4 border-orange-500"
           />
