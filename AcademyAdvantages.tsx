@@ -36,7 +36,7 @@ const advantages = [
 
 export function AcademyAdvantages() {
   return (
-    <section className="py-20 bg-white">
+    <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -44,8 +44,12 @@ export function AcademyAdvantages() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Academy Advantages</h2>
-          <p className="text-xl text-gray-600">Our systematic approach to excellence</p>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            Academy Advantages
+          </h2>
+          <p className="text-xl text-gray-600">
+            Our systematic approach to excellence
+          </p>
         </motion.div>
 
         <div className="relative">
@@ -66,15 +70,37 @@ export function AcademyAdvantages() {
                 }`}
               >
                 {/* Content */}
-                <div className={`flex-1 ${index % 2 === 0 ? "md:text-right" : "md:text-left"}`}>
+                <div
+                  className={`flex-1 ${
+                    index % 2 === 0 ? "md:text-right" : "md:text-left"
+                  }`}
+                >
                   <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all">
-                    <div className="flex items-start gap-4 md:justify-end" style={{ flexDirection: index % 2 === 0 ? 'row-reverse' : 'row' }}>
-                      <div className={`w-12 h-12 bg-gradient-to-br ${advantage.color} rounded-xl flex items-center justify-center flex-shrink-0`}>
+                    <div
+                      className="flex items-start gap-4 md:justify-end"
+                      style={{
+                        flexDirection:
+                          index % 2 === 0 ? "row-reverse" : "row",
+                      }}
+                    >
+                      <div
+                        className={`w-12 h-12 bg-gradient-to-br ${advantage.color} rounded-xl flex items-center justify-center flex-shrink-0`}
+                      >
                         <CheckCircle2 className="w-6 h-6 text-white" />
                       </div>
-                      <div className={index % 2 === 0 ? "text-right" : "text-left"}>
-                        <h3 className="text-xl font-bold text-gray-900 mb-2">{advantage.title}</h3>
-                        <p className="text-gray-600">{advantage.description}</p>
+
+                      <div
+                        className={
+                          index % 2 === 0 ? "text-right" : "text-left"
+                        }
+                      >
+                        <h3 className="text-xl font-bold text-gray-900 mb-2">
+                          {advantage.title}
+                        </h3>
+
+                        <p className="text-gray-600">
+                          {advantage.description}
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -82,7 +108,9 @@ export function AcademyAdvantages() {
 
                 {/* Timeline Dot */}
                 <div className="hidden md:block">
-                  <div className={`w-6 h-6 bg-gradient-to-br ${advantage.color} rounded-full border-4 border-white shadow-lg`}></div>
+                  <div
+                    className={`w-6 h-6 bg-gradient-to-br ${advantage.color} rounded-full border-4 border-white shadow-lg`}
+                  ></div>
                 </div>
 
                 {/* Spacer */}
