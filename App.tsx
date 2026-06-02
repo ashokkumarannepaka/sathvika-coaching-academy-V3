@@ -27,8 +27,11 @@ export default function App() {
     <div className="min-h-screen bg-white">
       <Navbar />
       <Hero />
-      <DirectorMessage />
+
       <QuickRegistration />
+
+      <DirectorMessage />
+
       <ScholarshipTest />
       <Courses />
       <WhyChoose />
