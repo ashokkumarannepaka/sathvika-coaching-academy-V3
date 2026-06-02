@@ -1,99 +1,157 @@
 import { motion } from "motion/react";
-import { Phone, MessageCircle } from "lucide-react";
+import {
+  Phone,
+  MessageCircle,
+  ArrowRight,
+  Users,
+  Trophy,
+  TrendingUp,
+  Award,
+} from "lucide-react";
 
 export function QuickRegistration() {
   return (
-    <section className="py-16 bg-gradient-to-br from-blue-600 to-blue-800">
+    <section className="py-20 bg-gradient-to-br from-blue-700 via-blue-800 to-blue-900 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="bg-white/10 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20"
-        >
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-white mb-3">
-              Quick Registration
-            </h2>
-            <p className="text-blue-100">
-              Get free counseling from our expert team
-            </p>
+
+        {/* Header */}
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center gap-2 border border-orange-400 text-white px-5 py-2 rounded-full mb-6">
+            ⭐ 100% FREE • NO OBLIGATION
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <input
-              type="text"
-              placeholder="Student Name"
-              className="bg-white/90 backdrop-blur px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500"
-            />
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">
+            Get Free Counseling
+          </h2>
 
-            <input
-              type="text"
-              placeholder="Parent Name"
-              className="bg-white/90 backdrop-blur px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500"
-            />
+          <p className="text-2xl text-orange-300 font-medium mb-4">
+            Start Your Success Journey Today!
+          </p>
 
-            <input
-              type="tel"
-              placeholder="Mobile Number"
-              className="bg-white/90 backdrop-blur px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500"
-            />
+          <p className="text-blue-100 text-lg max-w-3xl mx-auto">
+            Speak with our expert counselors and get personalized guidance
+            for the right course and career path.
+          </p>
+        </div>
 
-            <select className="bg-white/90 backdrop-blur px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500">
-              <option>Select Class</option>
-              <option>Class 6</option>
-              <option>Class 7</option>
-              <option>Class 8</option>
-              <option>Class 9</option>
-              <option>Class 10</option>
-              <option>Class 11</option>
-              <option>Class 12</option>
-            </select>
+        {/* Cards */}
+        <div className="grid lg:grid-cols-3 gap-8 mb-12">
 
-            <select className="bg-white/90 backdrop-blur px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500">
-              <option>Course Interested</option>
-              <option>IIT-JEE</option>
-              <option>NEET</option>
-              <option>Foundation</option>
-              <option>Olympiads</option>
-              <option>Board Exams</option>
-            </select>
+          {/* Counseling */}
+          <motion.div
+            whileHover={{ y: -10 }}
+            className="bg-white rounded-3xl p-8 shadow-2xl border border-orange-200"
+          >
+            <div className="w-20 h-20 mx-auto rounded-full bg-orange-100 flex items-center justify-center mb-6">
+              <ArrowRight className="w-10 h-10 text-orange-500" />
+            </div>
 
-            <input
-              type="text"
-              placeholder="City"
-              className="bg-white/90 backdrop-blur px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500"
-            />
-          </div>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all"
-            >
+            <h3 className="text-3xl font-bold text-center text-gray-900 mb-4">
               Get Free Counseling
-            </motion.button>
+            </h3>
 
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-green-500 text-white px-8 py-4 rounded-xl font-semibold flex items-center gap-2 hover:bg-green-600 transition-all"
-            >
-              <MessageCircle className="w-5 h-5" />
-              WhatsApp Now
-            </motion.button>
+            <p className="text-gray-600 text-center mb-8">
+              Our experts will call you back and guide you personally.
+            </p>
 
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold flex items-center gap-2 hover:bg-gray-100 transition-all"
+            <button
+              onClick={() =>
+                window.open(
+                  "https://docs.google.com/forms/d/e/1FAIpQLSfXExv7VkWuZa0JVHWI-wJOl02irzEBy1zSnZfirDFkneqiiQ/viewform",
+                  "_blank"
+                )
+              }
+              className="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-4 rounded-2xl font-semibold text-lg hover:shadow-xl transition-all"
             >
-              <Phone className="w-5 h-5" />
-              Call Now
-            </motion.button>
+              Request Callback →
+            </button>
+          </motion.div>
+
+          {/* WhatsApp */}
+          <motion.div
+            whileHover={{ y: -10 }}
+            className="bg-white rounded-3xl p-8 shadow-2xl border border-green-200"
+          >
+            <div className="w-20 h-20 mx-auto rounded-full bg-green-100 flex items-center justify-center mb-6">
+              <MessageCircle className="w-10 h-10 text-green-500" />
+            </div>
+
+            <h3 className="text-3xl font-bold text-center text-gray-900 mb-4">
+              Chat on WhatsApp
+            </h3>
+
+            <p className="text-gray-600 text-center mb-8">
+              Chat instantly on WhatsApp and get quick answers.
+            </p>
+
+            <button
+              onClick={() =>
+                window.open(
+                  "https://wa.me/919035955777?text=Hi%20I%20need%20counseling%20for%20admission",
+                  "_blank"
+                )
+              }
+              className="w-full bg-green-500 text-white py-4 rounded-2xl font-semibold text-lg hover:bg-green-600 transition-all"
+            >
+              Chat Now →
+            </button>
+          </motion.div>
+
+          {/* Call */}
+          <motion.div
+            whileHover={{ y: -10 }}
+            className="bg-white rounded-3xl p-8 shadow-2xl border border-blue-200"
+          >
+            <div className="w-20 h-20 mx-auto rounded-full bg-blue-100 flex items-center justify-center mb-6">
+              <Phone className="w-10 h-10 text-blue-500" />
+            </div>
+
+            <h3 className="text-3xl font-bold text-center text-gray-900 mb-4">
+              Call Us Now
+            </h3>
+
+            <p className="text-gray-600 text-center mb-8">
+              Speak directly with our admission counselors.
+            </p>
+
+            <a
+              href="tel:+919035955777"
+              className="block w-full text-center bg-blue-600 text-white py-4 rounded-2xl font-semibold text-lg hover:bg-blue-700 transition-all"
+            >
+              📞 +91 90359 55777
+            </a>
+          </motion.div>
+        </div>
+
+        {/* Stats */}
+        <div className="bg-white rounded-3xl p-8 shadow-xl">
+          <div className="grid md:grid-cols-4 gap-8 text-center">
+            <div>
+              <Users className="w-10 h-10 mx-auto text-blue-600 mb-3" />
+              <div className="text-4xl font-bold text-blue-600">5000+</div>
+              <div className="text-gray-600">Students Trained</div>
+            </div>
+
+            <div>
+              <Trophy className="w-10 h-10 mx-auto text-orange-500 mb-3" />
+              <div className="text-4xl font-bold text-orange-500">500+</div>
+              <div className="text-gray-600">Top Rankers</div>
+            </div>
+
+            <div>
+              <TrendingUp className="w-10 h-10 mx-auto text-green-500 mb-3" />
+              <div className="text-4xl font-bold text-green-500">95%</div>
+              <div className="text-gray-600">Success Rate</div>
+            </div>
+
+            <div>
+              <Award className="w-10 h-10 mx-auto text-purple-500 mb-3" />
+              <div className="text-4xl font-bold text-purple-500">10+</div>
+              <div className="text-gray-600">Years Excellence</div>
+            </div>
           </div>
-        </motion.div>
+        </div>
+
       </div>
     </section>
   );
