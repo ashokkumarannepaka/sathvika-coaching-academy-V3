@@ -39,39 +39,39 @@ export function Contact() {
               <input
                 type="text"
                 placeholder="Your Name"
-                className="w-full bg-white/90 backdrop-blur px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full bg-white/90 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
 
               <input
                 type="tel"
                 placeholder="Mobile Number"
-                className="w-full bg-white/90 backdrop-blur px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full bg-white/90 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
 
               <input
                 type="email"
                 placeholder="Email Address"
-                className="w-full bg-white/90 backdrop-blur px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full bg-white/90 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
 
               <textarea
                 placeholder="Your Message"
                 rows={5}
-                className="w-full bg-white/90 backdrop-blur px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 resize-none"
-              ></textarea>
+                className="w-full bg-white/90 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 resize-none"
+              />
 
               <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.97 }}
                 type="submit"
-                className="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all"
+                className="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-4 rounded-xl font-semibold shadow-lg"
               >
                 Send Message
               </motion.button>
             </form>
           </motion.div>
 
-          {/* Contact Info */}
+          {/* Contact Information */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -86,30 +86,30 @@ export function Contact() {
               {
                 icon: Phone,
                 title: "Call Us",
-                info: "+91 903595777",
+                info: "+91 90359 55777",
                 subinfo: "Mon - Sat: 9:00 AM - 7:00 PM",
-                color: "from-green-500 to-green-600"
+                color: "from-green-500 to-green-600",
               },
               {
                 icon: MessageCircle,
                 title: "WhatsApp",
-                info: "+91 903595777",
+                info: "+91 90359 55777",
                 subinfo: "24/7 Support Available",
-                color: "from-green-400 to-green-500"
+                color: "from-green-400 to-green-500",
               },
               {
                 icon: Mail,
                 title: "Email",
                 info: "info@sathvikacoachingacademy.com",
                 subinfo: "We'll respond within 24 hours",
-                color: "from-blue-500 to-blue-600"
+                color: "from-blue-500 to-blue-600",
               },
               {
                 icon: MapPin,
                 title: "Visit Us",
-                info: "123 Education Street, City Center",
-                subinfo: "Multiple branches across India",
-                color: "from-purple-500 to-purple-600"
+                info: "Sathvika Coaching Academy",
+                subinfo: "Bangalore, Karnataka, India",
+                color: "from-purple-500 to-purple-600",
               },
             ].map((contact, index) => (
               <motion.div
