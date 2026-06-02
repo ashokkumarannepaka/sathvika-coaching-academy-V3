@@ -54,21 +54,37 @@ export function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              
+              {/* Register Now */}
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() =>
+                  window.open(
+                    "https://docs.google.com/forms/d/e/1FAIpQLSfXExv7VkWuZa0JVHWI-wJOl02irzEBy1zSnZfirDFkneqiiQ/viewform",
+                    "_blank"
+                  )
+                }
                 className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-xl font-semibold shadow-lg shadow-orange-500/30 hover:shadow-xl transition-all"
               >
                 Register Now
               </motion.button>
 
+              {/* Book Free Demo */}
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() =>
+                  window.open(
+                    "https://wa.me/919035955777?text=Hi%20I%20would%20like%20to%20book%20a%20free%20demo%20class",
+                    "_blank"
+                  )
+                }
                 className="bg-white text-blue-600 border-2 border-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-all"
               >
                 Book Free Demo
               </motion.button>
+
             </div>
           </motion.div>
 
@@ -132,7 +148,6 @@ export function Hero() {
               ))}
             </div>
 
-            {/* Floating Image */}
             <motion.div
               animate={{ y: [0, -20, 0] }}
               transition={{ duration: 3, repeat: Infinity }}
