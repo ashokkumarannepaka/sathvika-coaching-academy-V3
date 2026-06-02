@@ -16,19 +16,19 @@ export function Footer() {
 
           {/* Logo & About */}
           <div>
-            <div className="inline-flex items-center gap-4 bg-white rounded-2xl px-4 py-3 mb-5 shadow-lg">
+            <div className="flex items-center gap-3 mb-5">
               <img
                 src={`${import.meta.env.BASE_URL}sathvika-logo.png`}
                 alt="Sathvika Coaching Academy"
-                className="h-16 w-auto object-contain"
+                className="h-16 w-auto object-contain bg-white rounded-xl p-1"
               />
 
               <div>
-                <h2 className="text-4xl font-extrabold text-blue-900 leading-none">
+                <h2 className="text-2xl font-bold text-white leading-none">
                   SATHVIKA
                 </h2>
 
-                <p className="text-orange-500 font-bold text-lg tracking-wide mt-1">
+                <p className="text-orange-500 font-semibold text-sm tracking-wide mt-1">
                   COACHING ACADEMY
                 </p>
               </div>
