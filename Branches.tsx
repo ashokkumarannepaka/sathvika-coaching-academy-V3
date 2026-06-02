@@ -3,9 +3,9 @@ import { MapPin, Phone, Navigation } from "lucide-react";
 
 const branches = [
   {
-    city: "Delhi",
-    address: "123 Education Hub, Connaught Place, New Delhi - 110001",
-    phone: "+91 98765 43210",
+    city: "Bellary",
+    address: "Donimalai Iron Ore Mines, Donimalai. P.O. Donimalai, Bellary (Dt.) - 583 118, Karnataka",
+    phone: "+91 7259534805",
     color: "from-blue-500 to-blue-600"
   },
   {
