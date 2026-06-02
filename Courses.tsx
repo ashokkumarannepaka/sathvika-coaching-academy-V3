@@ -41,7 +41,7 @@ const courses = [
 
 export function Courses() {
   return (
-    <section className="py-20 bg-white">
+    <section id="courses" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -49,8 +49,12 @@ export function Courses() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Courses</h2>
-          <p className="text-xl text-gray-600">Choose the perfect program for your goals</p>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            Our Courses
+          </h2>
+          <p className="text-xl text-gray-600">
+            Choose the perfect program for your goals
+          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -65,23 +69,34 @@ export function Courses() {
             >
               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:-translate-y-2">
                 {/* Gradient Background */}
-                <div className={`absolute top-0 left-0 right-0 h-2 bg-gradient-to-r ${course.color} rounded-t-2xl`}></div>
+                <div
+                  className={`absolute top-0 left-0 right-0 h-2 bg-gradient-to-r ${course.color} rounded-t-2xl`}
+                ></div>
 
                 {/* Icon */}
-                <div className={`w-16 h-16 bg-gradient-to-br ${course.color} rounded-2xl flex items-center justify-center mb-6`}>
+                <div
+                  className={`w-16 h-16 bg-gradient-to-br ${course.color} rounded-2xl flex items-center justify-center mb-6`}
+                >
                   <course.icon className="w-8 h-8 text-white" />
                 </div>
 
                 {/* Title */}
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">{course.title}</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  {course.title}
+                </h3>
 
                 {/* Description */}
-                <p className="text-gray-600 mb-4">{course.description}</p>
+                <p className="text-gray-600 mb-4">
+                  {course.description}
+                </p>
 
                 {/* Programs */}
                 <div className="space-y-2 mb-6">
                   {course.programs.map((program, idx) => (
-                    <div key={idx} className="flex items-center gap-2 text-sm text-gray-700">
+                    <div
+                      key={idx}
+                      className="flex items-center gap-2 text-sm text-gray-700"
+                    >
                       <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
                       {program}
                     </div>
