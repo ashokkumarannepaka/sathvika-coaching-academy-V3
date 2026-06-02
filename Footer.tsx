@@ -13,6 +13,7 @@ export function Footer() {
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+
           {/* Logo & About */}
           <div>
             <div className="flex items-center gap-3 mb-4">
@@ -54,22 +55,50 @@ export function Footer() {
             <h3 className="text-white font-semibold mb-4">Quick Links</h3>
 
             <ul className="space-y-2">
-              {[
-                "About Us",
-                "Our Courses",
-                "Results",
-                "Gallery",
-                "Contact",
-              ].map((link) => (
-                <li key={link}>
-                  <a
-                    href="#"
-                    className="hover:text-orange-500 transition-colors"
-                  >
-                    {link}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a
+                  href="#about"
+                  className="hover:text-orange-500 transition-colors"
+                >
+                  About Us
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#courses"
+                  className="hover:text-orange-500 transition-colors"
+                >
+                  Our Courses
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#results"
+                  className="hover:text-orange-500 transition-colors"
+                >
+                  Results
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#gallery"
+                  className="hover:text-orange-500 transition-colors"
+                >
+                  Gallery
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#contact"
+                  className="hover:text-orange-500 transition-colors"
+                >
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -78,23 +107,59 @@ export function Footer() {
             <h3 className="text-white font-semibold mb-4">Courses</h3>
 
             <ul className="space-y-2">
-              {[
-                "IIT-JEE",
-                "NEET",
-                "Foundation",
-                "Olympiads",
-                "Board Exams",
-                "Online Classes",
-              ].map((course) => (
-                <li key={course}>
-                  <a
-                    href="#"
-                    className="hover:text-orange-500 transition-colors"
-                  >
-                    {course}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a
+                  href="#courses"
+                  className="hover:text-orange-500 transition-colors"
+                >
+                  IIT-JEE
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#courses"
+                  className="hover:text-orange-500 transition-colors"
+                >
+                  NEET
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#courses"
+                  className="hover:text-orange-500 transition-colors"
+                >
+                  Foundation
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#courses"
+                  className="hover:text-orange-500 transition-colors"
+                >
+                  Olympiads
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#courses"
+                  className="hover:text-orange-500 transition-colors"
+                >
+                  Board Exams
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#courses"
+                  className="hover:text-orange-500 transition-colors"
+                >
+                  Online Classes
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -107,7 +172,13 @@ export function Footer() {
                 <Phone className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" />
 
                 <div>
-                  <p>+91 90359 55777</p>
+                  <a
+                    href="tel:+919035955777"
+                    className="hover:text-orange-500"
+                  >
+                    +91 90359 55777
+                  </a>
+
                   <p className="text-sm text-gray-400">
                     Mon - Sat: 9 AM - 7 PM
                   </p>
@@ -118,7 +189,13 @@ export function Footer() {
                 <Mail className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" />
 
                 <div>
-                  <p>info@sathvikacoachingacademy.com</p>
+                  <a
+                    href="mailto:info@sathvikacoachingacademy.com"
+                    className="hover:text-orange-500"
+                  >
+                    info@sathvikacoachingacademy.com
+                  </a>
+
                   <p className="text-sm text-gray-400">
                     We'll respond within 24 hours
                   </p>
@@ -131,6 +208,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+
             <p className="text-gray-400 text-sm">
               © 2026 Sathvika Coaching Academy. All rights reserved.
             </p>
@@ -157,6 +235,7 @@ export function Footer() {
                 Refund Policy
               </a>
             </div>
+
           </div>
         </div>
       </div>
