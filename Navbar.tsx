@@ -19,13 +19,22 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-24">
 
-          {/* Logo */}
-          <div className="flex items-center">
+          {/* Logo Section */}
+          <div className="flex items-center gap-3">
             <img
-              src="/sathvika-logo.png"
-              alt="Sathvika Logo"
-              className="h-20 w-auto object-contain"
+              src={`${import.meta.env.BASE_URL}sathvika-logo.png`}
+              alt="Sathvika Coaching Academy"
+              className="h-16 md:h-20 w-auto object-contain"
             />
+
+            <div className="hidden sm:block leading-tight">
+              <h1 className="text-2xl md:text-3xl font-extrabold tracking-wide text-blue-900">
+                SATHVIKA
+              </h1>
+              <p className="text-sm md:text-base font-semibold text-orange-500 uppercase tracking-wider">
+                Coaching Academy
+              </p>
+            </div>
           </div>
 
           {/* Desktop Menu */}
@@ -84,6 +93,17 @@ export function Navbar() {
             className="lg:hidden bg-white border-t border-gray-200"
           >
             <div className="px-4 py-4 space-y-3">
+
+              {/* Mobile Logo Text */}
+              <div className="pb-3 border-b">
+                <h2 className="font-bold text-blue-900 text-xl">
+                  SATHVIKA
+                </h2>
+                <p className="text-orange-500 font-semibold text-sm uppercase">
+                  Coaching Academy
+                </p>
+              </div>
+
               {menuItems.map((item) => (
                 <a
                   key={item}
