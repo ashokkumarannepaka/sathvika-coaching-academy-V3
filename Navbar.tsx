@@ -65,7 +65,7 @@ export function Navbar() {
   whileTap={{ scale: 0.95 }}
   onClick={() =>
     window.open(
-      "https://docs.google.com/forms/d/e/1FAIpQLSfKNKN6pxNfIudGPRDyz1o0FWjLwCaqDErSg03TtT83LyoXPg/viewform?usp=dialog",
+      "https://docs.google.com/forms/d/e/1FAIpQLSfKNKN6pxNfIudGPRDyz1o0FWjLwCaqDErSg03TtT83LyoXPg/viewform?usp=header",
       
       "_blank"
     )
