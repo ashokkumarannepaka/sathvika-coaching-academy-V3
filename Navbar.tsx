@@ -61,12 +61,18 @@ export function Navbar() {
             </a>
 
             <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg shadow-orange-500/30"
-            >
-              Enroll Now
-            </motion.button>
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  onClick={() =>
+    window.open(
+      "https://docs.google.com/forms/d/e/1FAIpQLSfKNKN6pxNfIudGPRDyz1o0FWjLwCaqDErSg03TtT83LyoXPg/viewform",
+      "_blank"
+    )
+  }
+  className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg shadow-orange-500/30"
+>
+  Enroll Now
+</motion.button>
           </div>
 
           {/* Mobile Menu Button */}
