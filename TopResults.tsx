@@ -68,7 +68,10 @@ export function TopResults() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-900 to-blue-900 text-white">
+    <section
+      id="results"
+      className="py-20 bg-gradient-to-br from-gray-900 to-blue-900 text-white"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -80,8 +83,14 @@ export function TopResults() {
             <Trophy className="w-5 h-5" />
             <span className="font-semibold">Our Pride</span>
           </div>
-          <h2 className="text-4xl font-bold mb-4">Top Results 2026</h2>
-          <p className="text-xl text-blue-200">Celebrating excellence and achievement</p>
+
+          <h2 className="text-4xl font-bold mb-4">
+            Top Results 2026
+          </h2>
+
+          <p className="text-xl text-blue-200">
+            Celebrating excellence and achievement
+          </p>
         </motion.div>
 
         <div className="px-4">
@@ -104,6 +113,7 @@ export function TopResults() {
                         className="w-full h-full object-cover"
                       />
                     </div>
+
                     <div className="absolute -top-2 -right-2 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full p-3">
                       <Star className="w-6 h-6 text-white fill-white" />
                     </div>
@@ -111,12 +121,21 @@ export function TopResults() {
 
                   {/* Student Info */}
                   <div className="text-center">
-                    <h3 className="text-xl font-bold mb-2">{topper.name}</h3>
+                    <h3 className="text-xl font-bold mb-2">
+                      {topper.name}
+                    </h3>
+
                     <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 py-2 rounded-lg mb-3 font-bold text-2xl">
                       {topper.rank}
                     </div>
-                    <p className="text-blue-200 mb-1">{topper.exam}</p>
-                    <p className="text-orange-300 font-semibold">{topper.score}</p>
+
+                    <p className="text-blue-200 mb-1">
+                      {topper.exam}
+                    </p>
+
+                    <p className="text-orange-300 font-semibold">
+                      {topper.score}
+                    </p>
                   </div>
                 </motion.div>
               </div>
