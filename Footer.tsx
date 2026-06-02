@@ -16,17 +16,21 @@ export function Footer() {
 
           {/* Logo & About */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
+            <div className="inline-flex items-center gap-4 bg-white rounded-2xl px-4 py-3 mb-5 shadow-lg">
               <img
                 src={`${import.meta.env.BASE_URL}sathvika-logo.png`}
                 alt="Sathvika Coaching Academy"
-                className="h-14 w-auto object-contain"
+                className="h-16 w-auto object-contain"
               />
 
               <div>
-                <h3 className="text-xl font-bold text-white">
-                  Sathvika Coaching Academy
-                </h3>
+                <h2 className="text-4xl font-extrabold text-blue-900 leading-none">
+                  SATHVIKA
+                </h2>
+
+                <p className="text-orange-500 font-bold text-lg tracking-wide mt-1">
+                  COACHING ACADEMY
+                </p>
               </div>
             </div>
 
@@ -203,6 +207,7 @@ export function Footer() {
               </li>
             </ul>
           </div>
+
         </div>
 
         {/* Bottom Bar */}
