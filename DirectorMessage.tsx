@@ -10,13 +10,16 @@ export function DirectorMessage() {
           viewport={{ once: true }}
           className="bg-white rounded-3xl shadow-xl overflow-hidden"
         >
-         <div className="bg-gradient-to-br from-blue-600 to-blue-800 p-10 flex items-center justify-center">
-  <img
-    src={`${import.meta.env.BASE_URL}vijay.png`}
-    alt="B. Vijay Kumar"
-    className="w-full max-w-md h-auto rounded-2xl shadow-2xl"
-  />
-</div>
+          <div className="grid lg:grid-cols-2 gap-0">
+
+            {/* Photo Section */}
+            <div className="bg-gradient-to-br from-blue-600 to-blue-800 p-10 flex items-center justify-center">
+              <img
+                src={`${import.meta.env.BASE_URL}vijay.png`}
+                alt="B. Vijay Kumar"
+                className="w-full max-w-md h-auto rounded-2xl shadow-2xl"
+              />
+            </div>
 
             {/* Message Section */}
             <div className="p-10 lg:p-14 flex flex-col justify-center">
